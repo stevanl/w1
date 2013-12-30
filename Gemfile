@@ -31,16 +31,28 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
+
+gem 'split', '~> 0.6.5', require: 'split/dashboard'
+gem 'haml'
+gem 'kaminari'
+gem 'sorted', '0.4.3'
+gem 'ga_cookie_parser'
+gem 'bootstrap-sass', '~> 2.3.0.0'
+gem 'angularjs-rails'
+gem 'httparty'
+gem 'redcarpet'
+
+group :development do
+  gem 'awesome_print'
+  gem 'better_errors'
+end
+
+gem 'compass-rails'
+gem 'exception_notification'
+
+gem "ransack", github: "ernie/ransack", branch: "rails-4"
+
