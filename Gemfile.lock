@@ -44,7 +44,7 @@ GEM
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
-    bootstrap-sass (2.3.0.1)
+    bootstrap-sass (3.0.3.0)
       sass (~> 3.2)
     builder (3.1.4)
     chunky_png (1.2.9)
@@ -176,7 +176,7 @@ DEPENDENCIES
   angularjs-rails
   awesome_print
   better_errors
-  bootstrap-sass (~> 2.3.0.0)
+  bootstrap-sass (~> 3.0.3.0)
   coffee-rails (~> 4.0.0)
   compass-rails
   exception_notification
