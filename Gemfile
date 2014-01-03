@@ -26,14 +26,10 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
+# Simple forms
+gem 'simple_form'
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
+# Required for Heroku
 gem 'rails_12factor', group: :production
 
 gem 'split', '~> 0.6.5', require: 'split/dashboard'
@@ -46,9 +42,24 @@ gem 'angularjs-rails'
 gem 'httparty'
 gem 'redcarpet'
 
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+group :test do
+  gem 'cucumber'
+  gem 'cucumber-rails'
+  gem 'rspec'
+  gem 'factory_girl'
+  gem 'rspec'
+  gem 'rspec-rails'
+end
+
 group :development do
   gem 'awesome_print'
   gem 'better_errors'
+  gem 'thin'
 end
 
 gem 'compass-rails'
