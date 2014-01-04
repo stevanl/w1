@@ -34,6 +34,7 @@ gem 'rails_12factor', group: :production
 
 gem 'split', '~> 0.6.5', require: 'split/dashboard'
 gem 'haml'
+gem 'haml-rails'
 gem 'kaminari'
 gem 'sorted', '0.4.3'
 gem 'ga_cookie_parser'
@@ -47,19 +48,15 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test do
+group :development, :test do
+  gem 'awesome_print'
+  gem 'better_errors'
+  gem 'thin'
   gem 'cucumber'
   gem 'cucumber-rails'
   gem 'rspec'
   gem 'factory_girl'
-  gem 'rspec'
   gem 'rspec-rails'
-end
-
-group :development do
-  gem 'awesome_print'
-  gem 'better_errors'
-  gem 'thin'
 end
 
 gem 'compass-rails'
