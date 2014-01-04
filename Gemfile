@@ -48,12 +48,15 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :test do
+  gem 'cucumber'
+  gem 'cucumber-rails'
+end
+
 group :development, :test do
   gem 'awesome_print'
   gem 'better_errors'
   gem 'thin'
-  gem 'cucumber'
-  gem 'cucumber-rails'
   gem 'rspec'
   gem 'factory_girl'
   gem 'rspec-rails'
