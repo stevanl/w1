@@ -1,6 +1,22 @@
-%p#notice= notice
-
-
-= link_to 'Edit', edit_provider_path(@provider)
-\|
-= link_to 'Back', providers_path
+.container
+  %p#notice= notice
+  .table-responsive
+    %table.table
+      %tr
+        %th Site Name
+        %td= @provider.name
+      %tr
+        %th Site Type
+        %td= @provider.site_type
+      %tr
+        %th Users notes
+        %td= @provider.users
+      %tr
+        %th Rating
+        %td= @provider.rating
+      %tr
+        %th Affiliate URL
+        %td= @provider.url
+  = link_to 'Edit', edit_provider_path(@provider)
+  \|
+  = link_to 'Back', providers_path

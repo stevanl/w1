@@ -7,4 +7,19 @@
           %li= msg
 
   .actions
-    = f.submit 'Save'
+    .form-group
+      %label{for: ""} Site name
+      = f.text_field :name, class: "form-control", placeholder: "Name"
+    .form-group
+      %label{for: ""} Type
+      = f.text_field :site_type, class: "form-control", placeholder: "Casual"
+    .form-group
+      %label{for: ""} Rating
+      = f.text_field :rating, class: "form-control", placeholder: "99"
+    .form-group
+      %label{for: ""} Users notes
+      = f.text_field :users, class: "form-control", placeholder: "Lots of users"
+    .form-group
+      %label{for: ""} URL
+      = f.text_field :url, class: "form-control", placeholder: "http://"
+    = f.submit 'Save', class: "btn btn-default"

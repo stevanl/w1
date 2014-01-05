@@ -51,3 +51,20 @@
     %p It doesn't matter who you are, or where you come from. We all deserve to find that special connection with someone. So that we can live life Smilingly.
     %p
       %a.btn.btn-lg.btn-primary{href: "../../components/#navbar", role: "button"} Sign Up
+
+.container
+  .table-responsive
+    %table.table.table-hover
+      %tr
+        %th Website
+        %th Type
+        %th Users
+        %th Rating
+        %th Visit
+      - for provider in @providers
+        %tr
+          %td= provider.name
+          %td= provider.site_type
+          %td= provider.users
+          %td= provider.rating
+          %td= link_to "Visit", provider.url, class: "btn btn-primary"
