@@ -53,7 +53,7 @@ group :test do
   gem 'cucumber-rails', require: false
 end
 
-group :development, :test do
+group :development do
   gem 'awesome_print'
   gem 'better_errors'
   gem 'thin'
