@@ -6,7 +6,7 @@ W1Dating::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
-  get 'home#about', as: :about
+  get 'about' => 'home#about', as: :about
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
