@@ -1,0 +1,17 @@
+.container
+  %h2 Compare Dating sites
+  .table-responsive
+    %table.table.table-hover
+      %tr
+        %th Website
+        %th Type
+        %th Users
+        %th Rating
+        %th Visit
+      - for provider in @providers
+        %tr
+          %td= provider.name
+          %td= provider.site_type
+          %td= provider.users
+          %td= provider.rating
+          %td= link_to "Visit", provider.url, class: "btn btn-primary"
